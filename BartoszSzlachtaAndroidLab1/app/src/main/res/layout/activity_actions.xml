@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/holo_blue_light">
+    <data>
+        <variable
+            name="user"
+            type="com.example.bartoszszlachtaandroidlab1.User" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ActionsActivity">
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="Write to Toast"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="Write to LogCat - Listener"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/SampleMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:gravity="center"
+            android:hint="We write here smth"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:text='@{user.firstName + " - " + user.lastName}'
+            />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="Write to TextView"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="Try Data Binding"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/aaa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:gravity="center"
+            android:hint="Data Binding EditText"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:text='@={user.firstName}'
+            />
+    </LinearLayout>
+</layout>

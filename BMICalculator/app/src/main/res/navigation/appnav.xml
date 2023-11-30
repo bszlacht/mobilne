@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appnav"
+    app:startDestination="@id/mainActivity">
+    <fragment
+        android:id="@+id/underweight"
+        android:name="com.example.bmicalculator.Underweight"
+        android:label="fragment_underweight"
+        tools:layout="@layout/fragment_underweight" />
+    <fragment
+        android:id="@+id/mainActivity"
+        android:name="com.example.bmicalculator.MainActivity"
+        android:label="main_layout"
+        tools:layout="@layout/main_layout" >
+        <action
+            android:id="@+id/action_mainActivity_to_underweight"
+            app:destination="@id/underweight" />
+        <action
+            android:id="@+id/action_mainActivity_to_healthy"
+            app:destination="@id/healthy" />
+        <action
+            android:id="@+id/action_mainActivity_to_obesity"
+            app:destination="@id/obesity" />
+        <action
+            android:id="@+id/action_mainActivity_to_overweight"
+            app:destination="@id/overweight" />
+    </fragment>
+    <fragment
+        android:id="@+id/obesity"
+        android:name="com.example.bmicalculator.Obesity"
+        android:label="fragment_obesity"
+        tools:layout="@layout/fragment_obesity" />
+    <fragment
+        android:id="@+id/healthy"
+        android:name="com.example.bmicalculator.Healthy"
+        android:label="fragment_healthy"
+        tools:layout="@layout/fragment_healthy" />
+    <fragment
+        android:id="@+id/overweight"
+        android:name="com.example.bmicalculator.Overweight"
+        android:label="fragment_overweight"
+        tools:layout="@layout/fragment_overweight" />
+</navigation>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background">
+    <EditText
+        android:id="@+id/first_edit_text"
+        android:layout_width="match_parent"
+        android:background="@android:color/holo_red_dark"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_string"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        />
+    <EditText
+        android:id="@+id/second_edit_text"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/to_adventure"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        />
+</LinearLayout>
